@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #fff;
+}
+
+.header-contacts {
+    display: none;
+}
+
+.navbar {
+    display: block;
+    width: 100%;
+    min-height: 60px;
+    padding: 10px 0;
+    background: #fff;
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.navbar .logo::first-letter {
+    color: rgb(147, 200, 63);
+}
+
+.navbar ul {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.navbar ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.navbar ul li a {
+    font-size: 0.9em;
+    color: #111;
+    padding: 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar ul li .active,
+.navbar ul li a:hover {
+    color: rgb(147, 200, 63);
+}
+
+/*Desktop design*/
+@media only screen and (min-width: 768px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .wrapper {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar h2 {
+        line-height: 60px;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        margin: 0;
+    }
+
+    .navbar ul li {
+        display: flex;
+    }
+
+    .navbar ul li a {
+        display: inline-block;
+        padding: 22px;
+    }
+
+    .navbar ul li .active,
+    .navbar ul li a:hover {
+        display: inline-block;
+        padding: 22px; 
+        color: #fff;
+        background:rgb(147, 200, 63);
+    }
+
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("./../img/banner.jpg");
+}
+
+.banner .banner-opacity {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.banner .banner-caption {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+
+
+.banner .banner-caption h3 {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color: rgb(147, 200, 63);
+}
+
+.banner .banner-caption p {
+    font-size: 0.8em;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+/*Desktop design*/
+@media only screen and (min-width: 768px) {
+    .banner {
+        height: calc(100vh - 60px);
+    }
+
+    .banner .banner-caption {
+        width: 100%;
+    }
+
+    .banner .banner-caption h3 {
+        font-size: 2em;
+    }
+    
+    .banner .banner-caption p {
+        font-size: 0.98em;
+    }
+
+    .banner .wrapper {
+        width: 70%;
+    }
+
+}
+
+.services {
+    display: block;
+    width: 100%;
+    padding: 50px 0; 
+}
+
+.services .services-header {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.services .services-header h2 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.services .services-header p {
+    font-size: 0.9em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 25px;
+}
+
+.services .all-services {
+    width: 100%;
+}
+
+.services .all-services >* {
+    text-align: center;
+}
+
+.services .all-services .service-info {
+    padding: 20px 0;
+}
+
+.services .all-services .service-info img {
+    width: 45px;
+    height: 45px;
+}
+
+.services .all-services .service-info h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 5px 0 3px;
+}
+
+.services .all-services .service-info span {
+    display: block;
+    width: 10%;
+    height: 2px;
+    background:rgb(147, 200, 63);
+    margin: 0 auto 12px;
+} 
+
+.services .all-services .service-info p {
+    color: rgba(0, 0, 0, 0.5);
+} 
+
+/*Desktop design*/
+@media only screen and (min-width: 768px) {
+
+    .services .wrapper {
+        width: 70%;
+    }
+
+    .services .all-services {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .services .all-services .service-info {
+        margin: 0 20px;
+        flex: 1 0 calc(33.3% - 40px);
+    }
+
+}
+
+footer {
+    width: 100%;
+    font-size: 0.85em;
+    text-align: center;
+    padding: 50px 0;
+    color: #fff;
+    background-color: #111;
+}
+
+.wrapper {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
